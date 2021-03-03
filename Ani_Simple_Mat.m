@@ -2,8 +2,8 @@ function [Rat] = Ani_Simple_Mat(Scan,center,Block,ds,smin,smax);
 % smin=1.3;
 % smax=1.9;
 
-[maskH,mask2,qmap1] = arcComp2b(ds,center,90,smin,smin,smax);
-[maskV,mask2,qmap1] = arcComp2b(ds,center,0,smin,smin,smax);
+[maskH,mask2,qmap1] = arcCompQ(ds,center,90,smin,smin,smax);
+[maskV,mask2,qmap1] = arcCompQ(ds,center,0,smin,smin,smax);
 maskV(~maskV)=NaN;
 maskH(~maskH)=NaN;
 
