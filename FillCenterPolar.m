@@ -15,4 +15,6 @@ for ii = 1:size(imP,2)
 end
 imP2(isnan(imP2)) = 0;
 
-Image = PolarToIm (imP2, 0, 1, sz(1) + mod(sz(1),2), sz(2) + mod(sz(2),2));
+Image = PolarToIm (imP2, 0, 1, sz(1) + mod(sz(1),2), sz(2) + mod(sz(2),2)); % Program was breaking if the size was odd.
+
+Image = Image(1:end - mod(sz(1),2), 1:end - mod(sz(2),2)); % Make the size of the output the same as the input.
