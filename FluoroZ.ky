@@ -7,6 +7,10 @@
 % the top and bottom of the ring 
 %
 % Rotation angle takes ring to be the plane
+%
+% The origin moves to each host atom. 
+%
+% 
 
 CC = 1.387;
 CH = 1.080;
@@ -23,7 +27,7 @@ A7  6 C CC    -61.3  0                  %
 A8  7 C CC    -119   0                  %
 A9  8 C CC    180    0                  % End of ring
 A10 7 F 1.348 0      0                  % F hat
-A11 5 H CH    119.5  0                  % 
-A12 6 H CH    58.9   0                  %
-A13 8 H CH    58.9   0                  %
-A14 9 H CH    119.8  0
+A11 5 H CH    119.5  0                  % H atoms
+A12 6 H CH    58.9   0                  % H atoms
+A13 8 H CH    58.9   0                  % H atoms
+A14 9 H CH    119.8  0                  % H atoms
