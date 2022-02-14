@@ -1,0 +1,29 @@
+% Internal Coordinate Description for Trifluorobenzofluoride
+% Coordinates must me frame dependent due to alignment simulations
+% Atom number; Number of host atom; Atom type; Distance; Angle from vertical; Rotation
+% Angle
+%
+% Alignment axis defined by the top fluorine atom and the carbon atoms on
+% the top and bottom of the ring 
+%
+% Rotation angle takes ring to be the plane
+
+CC = 1.387;
+CH = 1.080;
+CF = 1.352;
+
+A0  0 C 0.000 000.0  0                  % C atom at the bottom of the ring
+A1  0 C 1.499 177.6  90                 % C atom below A1 
+A2  1 F 1.361 109.2  90                 % F atom in triumverate, perpendicular to the plane
+A3  2 F 2.178 090.0 -60                 % Other two F atoms in triumverate; behind the plane
+A4  2 F 2.178 090.0 -120                % Other two F atoms in triumverate; behind the plane
+A5  0 C CC    60     0                  % Start of the ring 
+A6  5 C CC    0      0                  %
+A7  6 C CC    -61.3  0                  %
+A8  7 C CC    -119   0                  %
+A9  8 C CC    180    0                  % End of ring
+A10 7 F 1.348 0      0                  % F hat
+A11 5 H CH    119.5  0                  % 
+A12 6 H CH    58.9   0                  %
+A13 8 H CH    58.9   0                  %
+A14 9 H CH    119.8  0
