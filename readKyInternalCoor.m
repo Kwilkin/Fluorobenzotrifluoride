@@ -1,5 +1,8 @@
 function [Atoms] = readKyInternalCoor(filePath);
 % Takes the internal coodinates in filePath 
+if ~ strcmp(filePath(end-2:end),'.ky')
+    warning('Input file should be .ky internal coordinate file. Make sure your file is correctly formatted.')
+end
 
 fileID = fopen(filePath);
 Coor = textscan(fileID,'%s %s %s %s %s %s %s %*[^\n]');
